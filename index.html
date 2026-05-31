@@ -19,7 +19,7 @@
 <meta property="og:description" content="Custom photos, logos and selfies printed on the head of a pint. Available across the UK for weddings, corporate events and parties." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://thepintprinters.co.uk/" />
-<meta property="og:image" content="https://thepintprinters.co.uk/images/espresso-martini.jpg" />
+<meta property="og:image" content="https://thepintprinters.co.uk/images/hero-pint.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:locale" content="en_GB" />
@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="The Pint Printers | Print on a Pint Hire | UK" />
 <meta name="twitter:description" content="Custom photos, logos and selfies printed on the head of a pint. Available across the UK for weddings, corporate events and parties." />
-<meta name="twitter:image" content="https://thepintprinters.co.uk/images/espresso-martini.jpg" />
+<meta name="twitter:image" content="https://thepintprinters.co.uk/images/hero-pint.jpg" />
 
 <!-- Structured data: LocalBusiness + Service + FAQ -->
 <script type="application/ld+json">
@@ -41,7 +41,7 @@
       "@id": "https://thepintprinters.co.uk/#business",
       "name": "The Pint Printers",
       "url": "https://thepintprinters.co.uk/",
-      "image": "https://thepintprinters.co.uk/images/espresso-martini.jpg",
+      "image": "https://thepintprinters.co.uk/images/hero-pint.jpg",
       "description": "Pint printer hire across the United Kingdom. Custom photos, logos and selfies printed on the head of Guinness, cocktails, espresso martinis and coffee for weddings, corporate events and parties.",
       "email": "hello@thepintprinters.co.uk",
       "areaServed": {
@@ -654,7 +654,9 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
     .canvas-grid { grid-template-columns: 1fr 1fr; }
   }
   .canvas-item {
-    background: var(--ink);
+    background-color: var(--ink);
+    background-size: cover;
+    background-position: center;
     color: var(--cream);
     border-radius: 4px;
     aspect-ratio: 3/4;
@@ -665,15 +667,18 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
     position: relative;
     overflow: hidden;
   }
-  .canvas-item::after {
+  /* Dark gradient over the photo so the label stays readable.
+     Lighter through the middle so the drink shows through. */
+  .canvas-item::before {
     content: "";
     position: absolute;
-    bottom: -50px;
-    right: -50px;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(200, 151, 91, 0.25) 0%, transparent 70%);
+    inset: 0;
+    background: linear-gradient(to top,
+      rgba(10, 10, 10, 0.92) 0%,
+      rgba(10, 10, 10, 0.55) 32%,
+      rgba(10, 10, 10, 0.10) 68%,
+      rgba(10, 10, 10, 0.40) 100%);
+    z-index: 0;
   }
   .canvas-item h4 {
     font-family: var(--serif);
@@ -791,6 +796,18 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
     line-height: 1.5;
   }
   .gallery-note::before { display: none; }
+  .gallery-cta {
+    background: var(--ink);
+    text-decoration: none;
+    color: var(--gold) !important;
+    font-family: var(--serif);
+    font-size: 19px !important;
+    font-style: italic;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    transition: color 0.2s;
+  }
+  .gallery-cta:hover { color: var(--cream) !important; }
 
   /* ============ FAQ ============ */
   .faq { background: var(--cream); }
@@ -1082,7 +1099,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       </div>
     </div>
     <div class="pint-stage">
-      <img src="images/espresso-martini.jpg" alt="An espresso martini with The Pint Printers logo printed on the foam" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px; box-shadow: 0 30px 60px rgba(0,0,0,0.4);" />
+      <img src="images/hero-pint.jpg" alt="A pint of Guinness with The Pint Printers logo printed on the foam head" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px; box-shadow: 0 30px 60px rgba(0,0,0,0.4);" />
     </div>
   </div>
 </header>
@@ -1139,19 +1156,19 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       <p>The ink is food-safe, flavourless, and tested to FDA, EU and SGS food-contact standards. It sits on the foam without changing the drink. Pour the pint, print the pint, drink the pint.</p>
     </div>
     <div class="canvas-grid">
-      <div class="canvas-item">
+      <div class="canvas-item" style="background-image: url('images/guinness.jpg');">
         <span class="canvas-meta">01</span>
         <h4>Guinness<br/>& Stout</h4>
       </div>
-      <div class="canvas-item">
+      <div class="canvas-item" style="background-image: url('images/espresso-martini.jpg');">
         <span class="canvas-meta">02</span>
         <h4>Espresso<br/>Martinis</h4>
       </div>
-      <div class="canvas-item">
+      <div class="canvas-item" style="background-image: url('images/cocktail.jpg');">
         <span class="canvas-meta">03</span>
         <h4>Cocktails<br/>& Foams</h4>
       </div>
-      <div class="canvas-item">
+      <div class="canvas-item" style="background-image: url('images/coffee.jpg');">
         <span class="canvas-meta">04</span>
         <h4>Coffee<br/>& Lattes</h4>
       </div>
@@ -1196,12 +1213,12 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       <p>Real designs from real events. Pints printed across weddings, corporate launches and parties throughout the UK.</p>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-tile" style="background-image: url('images/hero.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="gallery-tile" style="background-image: url('images/guinness.jpg'); background-size: cover; background-position: center;"></div>
       <div class="gallery-tile" style="background-image: url('images/espresso-martini.jpg'); background-size: cover; background-position: center;"></div>
-      <div class="gallery-tile" style="background-image: url('images/tray.jpg'); background-size: cover; background-position: center;"></div>
-      <div class="gallery-tile" style="background-image: url('images/foam-detail.jpg'); background-size: cover; background-position: center;"></div>
-      <div class="gallery-tile" style="background-image: url('images/machine.jpg'); background-size: cover; background-position: center;"></div>
-      <div class="gallery-tile" style="background-image: url('images/selfie-pint.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="gallery-tile" style="background-image: url('images/cocktail.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="gallery-tile" style="background-image: url('images/coffee.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="gallery-tile" style="background-image: url('images/hero-pint.jpg'); background-size: cover; background-position: center;"></div>
+      <a href="https://instagram.com/thepintprinters" target="_blank" rel="noopener" class="gallery-tile gallery-cta">More on Instagram&nbsp;→</a>
     </div>
   </div>
 </section>
