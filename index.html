@@ -890,6 +890,28 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
   }
   .quote-meta div span { opacity: 0.8; }
 
+  /* UK Wedding Services accredited badge */
+  .ukws-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    line-height: 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .ukws-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  .ukws-badge img {
+    display: block;
+    width: 150px;
+    height: auto;
+  }
+  /* Inside the quote-meta column the strong label already spaces it */
+  .quote-meta .ukws-badge { margin-top: 2px; }
+
   form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -977,6 +999,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
     letter-spacing: 0.04em;
   }
   footer a { color: var(--gold); text-decoration: none; }
+  footer .ukws-badge a { color: inherit; }
 
   /* ============ ANIMATIONS ============ */
   @keyframes fadeUp {
@@ -1362,6 +1385,12 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
             <strong>Response time</strong>
             <span>Same day, Monday to Friday</span>
           </div>
+          <div>
+            <strong>Accredited supplier</strong>
+            <a class="ukws-badge" href="https://ukweddingservices.com/kent/manchester/wedding-general-entertainment/the-pint-printers/the-pint-printers-personalised-drink-printing-55280" target="_blank" rel="noopener" aria-label="Find us on UK Wedding Services">
+              <img src="https://ukweddingservices.com/badges/find-me-on-ukws-light.png" alt="Find us on UK Wedding Services" />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -1419,6 +1448,9 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
   <div class="container">
     <a href="/" class="logo"><img class="logo-mark" src="/images/favicon-180.png" alt="" />The <em>Pint</em> Printers</a>
     <p>© 2026 The Pint Printers. United Kingdom. <a href="/how-it-works">How it works</a> · <a href="https://instagram.com/thepintprinters" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:hello@thepintprinters.co.uk">hello@thepintprinters.co.uk</a></p>
+    <a class="ukws-badge" href="https://ukweddingservices.com/kent/manchester/wedding-general-entertainment/the-pint-printers/the-pint-printers-personalised-drink-printing-55280" target="_blank" rel="noopener" aria-label="Find us on UK Wedding Services">
+      <img src="https://ukweddingservices.com/badges/find-me-on-ukws-light.png" alt="Find us on UK Wedding Services" />
+    </a>
   </div>
 </footer>
 
