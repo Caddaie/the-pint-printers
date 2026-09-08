@@ -111,7 +111,7 @@
           "name": "What does our venue need to do?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Almost nothing. The machine needs a spot on the bar about the size of a small countertop microwave and a standard UK plug socket. It arrives by tracked courier the working day before your wedding, the bar team plug it in, and after one test print they are away. No operator, no training session."
+            "text": "Almost nothing. The machine needs a spot on the bar about the size of a small countertop microwave and a standard UK plug socket. It arrives by tracked courier one or two days before your wedding, the bar team plug it in, and after one test print they are away. No operator, no training session."
           }
         },
         {
@@ -963,6 +963,52 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
     width: auto;
     display: block;
   }
+
+  /* ============ REAL EVENTS ============ */
+  .real-events {
+    background: var(--ink);
+    color: var(--cream);
+  }
+  .real-events .section-head h2 { color: var(--cream); }
+  .real-events .section-head h2 em { color: var(--gold); }
+  .real-events .section-head .eyebrow { color: var(--gold); }
+  .real-events .section-head .eyebrow::before { color: var(--gold); }
+  .real-events .section-head p { color: var(--cream); opacity: 0.7; }
+  .real-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 820px) {
+    .real-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  }
+  .real-grid figure { margin: 0; }
+  .real-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .real-quote {
+    margin: 48px auto 0;
+    max-width: 720px;
+    text-align: center;
+    font-family: var(--serif);
+    font-size: 26px;
+    line-height: 1.4;
+    color: var(--cream);
+  }
+  .real-quote em { color: var(--gold); font-style: italic; }
+  .real-quote cite {
+    display: block;
+    margin-top: 16px;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
 </style>
 <style>
   /* ============ PAGE HERO (interior pages) ============ */
@@ -1245,13 +1291,13 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       </div>
       <div class="step">
         <div class="step-num">03</div>
-        <h3>It arrives the day before</h3>
-        <p>Tracked delivery straight to your venue the working day before. The bar team plug it in, run one test print, and it sits ready for the first pour.</p>
+        <h3>It arrives before the big day</h3>
+        <p>Tracked delivery straight to your venue, one or two days ahead of the big day. The bar team plug it in, run one test print, and it sits ready for the first pour.</p>
       </div>
       <div class="step">
         <div class="step-num">04</div>
         <h3>Print all night, send it back</h3>
-        <p>Guests tap a design or scan the QR code for selfies. Afterwards, the box goes to any local DPD Pickup shop, just show the return QR code we send you. Done.</p>
+        <p>Guests tap a design or scan the QR code for selfies. Afterwards, the box goes to any local local drop-off point, just show the return QR code we send you. Done.</p>
       </div>
     </div>
     <div class="how-cta">
@@ -1326,6 +1372,47 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
 </section>
 
 <!-- ============ FAQ ============ -->
+<!-- ============ REAL EVENTS ============ -->
+<section class="real-events" id="real-events">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">From recent weddings</span>
+      <h2>The bar queue became <em>the photo booth.</em></h2>
+      <p>Real prints from recent bookings. Monograms and venue illustrations on the Guinness, guests scanning the QR code to print their own, and the machine quietly stealing the show at the end of the bar.</p>
+    </div>
+    <div class="real-grid">
+      <figure>
+        <img src="images/wedding-monogram-guinness-pint-print.jpg" alt="Wedding monogram printed on the foam head of a Guinness pint next to the pint printer machine" loading="lazy" width="1050" height="1400" />
+      </figure>
+      <figure>
+        <img src="images/guest-selfie-printed-on-guinness.jpg" alt="Wedding guest selfie printed on the head of a pint of Guinness" loading="lazy" width="1050" height="1400" />
+      </figure>
+      <figure>
+        <img src="images/wedding-guest-photo-two-guinness-pints.jpg" alt="Two pints of Guinness with a guest photo printed on the foam at a wedding" loading="lazy" width="1400" height="1050" />
+      </figure>
+      <figure>
+        <img src="images/wedding-couple-caricature-foam-print.jpg" alt="Illustrated couple portrait printed with edible ink on drink foam at a wedding" loading="lazy" width="1050" height="1400" />
+      </figure>
+      <figure>
+        <img src="images/wedding-monogram-laurel-wreath-guinness.jpg" alt="Laurel wreath wedding monogram printed on the foam of a pint of Guinness" loading="lazy" width="1080" height="1080" />
+      </figure>
+      <figure>
+        <img src="images/wedding-venue-illustration-names-guinness-pints.jpg" alt="Wedding venue illustration with the couple's names and date printed on two pints of Guinness" loading="lazy" width="1080" height="1080" />
+      </figure>
+      <figure>
+        <img src="images/mr-and-mrs-script-printed-guinness.jpg" alt="Mr and Mrs in script lettering printed on the head of a Guinness pint" loading="lazy" width="1080" height="1080" />
+      </figure>
+      <figure>
+        <img src="images/wedding-venue-names-date-guinness-print.jpg" alt="Venue sketch with couple's names and wedding date printed on Guinness foam" loading="lazy" width="1080" height="1080" />
+      </figure>
+    </div>
+    <blockquote class="real-quote">
+      "The Pint Printer went down an absolute treat, the guests <em>loved it!</em> Thank you so much for everything."
+      <cite>Alex Abbott · Wedding, 2026</cite>
+    </blockquote>
+  </div>
+</section>
+
 <section class="faq">
   <div class="container">
     <div class="section-head">
@@ -1343,7 +1430,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       </details>
       <details>
         <summary>What does our venue need to do?</summary>
-        <p>Almost nothing. The machine needs a spot on the bar about the size of a small countertop microwave and a standard UK plug socket. It arrives by tracked courier the working day before, the bar team plug it in, and after one test print they're away. No operator, no training session. Most venues have seen nothing like it and love it.</p>
+        <p>Almost nothing. The machine needs a spot on the bar about the size of a small countertop microwave and a standard UK plug socket. It arrives by tracked courier one or two days ahead, the bar team plug it in, and after one test print they're away. No operator, no training session. Most venues have seen nothing like it and love it.</p>
       </details>
       <details>
         <summary>Can our guests print their own selfies?</summary>
