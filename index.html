@@ -65,7 +65,7 @@
       "name": "Pint Printer Hire",
       "provider": { "@id": "https://thepintprinters.co.uk/#business" },
       "areaServed": "United Kingdom",
-      "description": "Hire a pint printing machine for your event. Print custom photos, logos, monograms and your own designs directly on the foam head of Guinness, stout, espresso martinis, cocktails and coffee. Food-safe edible ink, no operator required, courier delivered with a pre-paid return label.",
+      "description": "Hire a pint printing machine for your event. Print custom photos, logos, monograms and your own designs directly on the foam head of Guinness, stout, espresso martinis, cocktails and coffee. Food-safe edible ink, no operator required, courier delivered with a QR-code return.",
       "offers": [
         { "@type": "Offer", "name": "Wedding Pint Printing", "price": "495", "priceCurrency": "GBP" },
         { "@type": "Offer", "name": "Corporate Event Drink Printing", "price": "750", "priceCurrency": "GBP" },
@@ -168,7 +168,7 @@
           "name": "What's included in the price?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Loading up to six designs you supply onto the machine, machine hire for the duration of your event, a fresh ink cartridge good for 600+ prints, tracked DPD delivery, a pre-paid DPD return label, and full setup instructions for your venue. No hidden costs."
+            "text": "Loading up to six designs you supply onto the machine, machine hire for the duration of your event, a fresh ink cartridge good for 600+ prints, tracked DPD delivery, a DPD QR-code return, and full setup instructions for your venue. No hidden costs."
           }
         },
         {
@@ -256,7 +256,7 @@
           "name": "How do we send the machine back after the event?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A pre-paid DPD return label sits in the box. After the event, pack the machine back into the case it arrived in, attach the label to the outer box, and drop it at any of 3,500 DPD Pickup shops within two working days. That's usually a cornershop, post office or supermarket. No printing or weighing needed."
+            "text": "After the event, pack the machine back into the case it arrived in and drop it at any of 3,500 DPD Pickup shops within two working days. We send you a DPD return QR code, just show it at the counter, no label or printer needed. That's usually a cornershop, post office or supermarket. No printing or weighing needed."
           }
         },
         {
@@ -1148,6 +1148,21 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
   @media (max-width: 380px) {
     .canvas-grid { grid-template-columns: 1fr; }
   }
+
+  /* Uniform badge sizing */
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .badge-row .ukws-badge { padding: 8px 12px; margin: 0; }
+  .badge-row .ukws-badge img,
+  .badge-row .ukws-badge img.badge-portrait {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
 </style>
 </head>
 
@@ -1217,7 +1232,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       <div class="step">
         <div class="step-num">04</div>
         <h3>Send it back</h3>
-        <p>A pre-paid DPD return label is in the box. Drop the machine at any of 3,500 DPD Pickup shops within two working days. Up to 600 prints per booking included as standard.</p>
+        <p>We send you a DPD return QR code. Show it at any of 3,500 DPD Pickup shops within two working days, no label needed. Up to 600 prints per booking included as standard.</p>
       </div>
     </div>
 
@@ -1400,7 +1415,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       </details>
       <details>
         <summary>What's included in the price?</summary>
-        <p>Loading up to six designs you supply onto the machine, machine hire for the duration of your event, a fresh ink cartridge good for 600+ prints, tracked DPD delivery, a pre-paid DPD return label, and full setup instructions for your venue. No hidden costs.</p>
+        <p>Loading up to six designs you supply onto the machine, machine hire for the duration of your event, a fresh ink cartridge good for 600+ prints, tracked DPD delivery, a DPD QR-code return, and full setup instructions for your venue. No hidden costs.</p>
       </details>
       <details>
         <summary>How does payment and cancellation work?</summary>
@@ -1447,7 +1462,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       </details>
       <details>
         <summary>How do we send the machine back after the event?</summary>
-        <p>A pre-paid DPD return label sits in the box. After the event, pack the machine back into the case it arrived in, attach the label to the outer box, and drop it at any of 3,500 DPD Pickup shops within two working days. That's usually a cornershop, post office or supermarket. No printing or weighing needed. Your damage deposit is refunded within seven days of the machine getting back to us.</p>
+        <p>After the event, pack the machine back into the case it arrived in and drop it at any of 3,500 DPD Pickup shops within two working days. We send you a DPD return QR code, just show it at the counter, no label or printer needed. That's usually a cornershop, post office or supermarket. No printing or weighing needed. Your damage deposit is refunded within seven days of the machine getting back to us.</p>
       </details>
       <details>
         <summary>What if it doesn't turn up, or stops working on the night?</summary>
@@ -1558,19 +1573,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
 <footer>
   <div class="container">
     <a href="/" class="logo"><img class="logo-mark" src="/images/favicon-180.png" alt="" />The <em>Pint</em> Printers</a>
-    <p>© 2026 The Pint Printers. United Kingdom. <a href="/how-it-works">How it works</a> · <a href="/weddings">Weddings</a> · <a href="/pricing">Pricing</a> · <a href="/parties">Parties</a> · <a href="/corporate">Corporate</a> · <a href="/drink-printer-hire">Drink printer hire</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="https://instagram.com/thepintprinters" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:hello@thepintprinters.co.uk">hello@thepintprinters.co.uk</a></p>
-    <div class="badge-row">
-      <a class="ukws-badge" href="https://ukweddingservices.com/kent/manchester/wedding-general-entertainment/the-pint-printers/the-pint-printers-personalised-drink-printing-55280" target="_blank" rel="noopener" aria-label="Find us on UK Wedding Services">
-        <img src="https://ukweddingservices.com/badges/find-me-on-ukws-light.png" alt="Find us on UK Wedding Services" />
-      </a>
-      <a class="ukws-badge" href="https://bridebook.com/uk/wedding-entertainment/the-pint-printers-wilmslow-cheshire-east-csQgvjBmMg" target="_blank" rel="noopener" aria-label="See The Pint Printers on Bridebook">
-        <img src="https://image.bridebook.com/assets/cms/badges/Featured_on_Badge_light_uk.png" alt="Featured on Bridebook" />
-      </a>
-      <a class="ukws-badge" href="https://www.addtoevent.co.uk/suppliers/the-pint-printers" target="_blank" rel="noopener" aria-label="See The Pint Printers on Add To Event">
-        <img class="badge-portrait" src="https://www.addtoevent.co.uk/sites/default/files/badges/featured_portrait_purple_small.png" alt="Add To Event Featured Supplier" />
-      </a>
-    </div>
-  </div>
+    <p>© 2026 The Pint Printers. United Kingdom. <a href="/how-it-works">How it works</a> · <a href="/weddings">Weddings</a> · <a href="/pricing">Pricing</a> · <a href="/parties">Parties</a> · <a href="/corporate">Corporate</a> · <a href="/drink-printer-hire">Drink printer hire</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="https://instagram.com/thepintprinters" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:hello@thepintprinters.co.uk">hello@thepintprinters.co.uk</a></p>  </div>
 </footer>
 
 <script>

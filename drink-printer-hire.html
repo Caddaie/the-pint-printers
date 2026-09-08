@@ -49,7 +49,7 @@
       "serviceType": "Drink printing machine hire",
       "provider": { "@id": "https://thepintprinters.co.uk/#business" },
       "areaServed": "United Kingdom",
-      "description": "Hire a drink printing machine for weddings, corporate events, parties and cafe launches. Prints logos, photos and guest selfies in edible ink on coffee, lattes, cocktails, espresso martinis, Guinness and any drink with a frothy head. Self-serve, couriered UK-wide with a pre-paid return label.",
+      "description": "Hire a drink printing machine for weddings, corporate events, parties and cafe launches. Prints logos, photos and guest selfies in edible ink on coffee, lattes, cocktails, espresso martinis, Guinness and any drink with a frothy head. Self-serve, couriered UK-wide with a QR-code return.",
       "offers": [
         { "@type": "Offer", "name": "Party Drink Printing", "price": "395", "priceCurrency": "GBP" },
         { "@type": "Offer", "name": "Wedding Drink Printing", "price": "495", "priceCurrency": "GBP" },
@@ -72,7 +72,7 @@
           "name": "How much does it cost to hire a drink printing machine?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hire starts at £395 for parties, £495 for weddings and £750 for corporate events, with packages at roughly 200, 400 and 600 prints. Every package includes tracked DPD delivery, a pre-paid return label, a fitted ink cartridge and your designs loaded before it ships."
+            "text": "Hire starts at £395 for parties, £495 for weddings and £750 for corporate events, with packages at roughly 200, 400 and 600 prints. Every package includes tracked DPD delivery, a QR-code return, a fitted ink cartridge and your designs loaded before it ships."
           }
         },
         {
@@ -96,7 +96,7 @@
           "name": "How does delivery and return work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We courier the machine tracked with DPD, usually arriving the working day before your event, anywhere in the UK. Afterwards you box it up with the packaging it came in and drop it at any of 3,500 DPD Pickup shops using the pre-paid label, within two working days."
+            "text": "We courier the machine tracked with DPD, usually arriving the working day before your event, anywhere in the UK. Afterwards you box it up with the packaging it came in and drop it at any of 3,500 DPD Pickup shops within two working days, showing the return QR code we send you, no label or printing needed."
           }
         },
         {
@@ -981,6 +981,21 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
   @media (max-width: 380px) {
     .canvas-grid { grid-template-columns: 1fr; }
   }
+
+  /* Uniform badge sizing */
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .badge-row .ukws-badge { padding: 8px 12px; margin: 0; }
+  .badge-row .ukws-badge img,
+  .badge-row .ukws-badge img.badge-portrait {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
 </style>
 </head>
 
@@ -1006,7 +1021,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
     <div>
       <span class="eyebrow">Drink Printer Hire · United Kingdom</span>
       <h1>Hire a drink printer for <em>any drink with a head.</em></h1>
-      <p class="lead">One drink printing machine covers the lot. Logos on lattes, selfies on Guinness, monograms on espresso martinis. We courier it anywhere in the UK with your designs loaded, your staff run it from a touchscreen, and a pre-paid label brings it home.</p>
+      <p class="lead">One drink printing machine covers the lot. Logos on lattes, selfies on Guinness, monograms on espresso martinis. We courier it anywhere in the UK with your designs loaded, your staff run it from a touchscreen, and a DPD QR code sends it home.</p>
       <div class="hero-ctas">
         <a href="#quote" class="btn btn-primary">Get a quote →</a>
         <a href="/how-it-works" class="btn btn-ghost">See how it works</a>
@@ -1079,7 +1094,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       <div class="step">
         <div class="step-num">04</div>
         <h3>Box it, drop it</h3>
-        <p>A pre-paid DPD label is in the box. Drop it at any of 3,500 DPD Pickup shops within two working days and your £300 damage deposit comes straight back.</p>
+        <p>We send you a DPD return QR code. Show it at any of 3,500 DPD Pickup shops within two working days and your £300 damage deposit comes straight back.</p>
       </div>
     </div>
   </div>
@@ -1250,7 +1265,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       </details>
       <details>
         <summary>How much does it cost to hire a drink printing machine?</summary>
-        <p>Hire starts at £395 for parties, £495 for weddings and £750 for corporate events, with packages at roughly 200, 400 and 600 prints. Every package includes tracked DPD delivery, a pre-paid return label, a fitted ink cartridge and your designs loaded before it ships. Full details are on our <a href="/pricing" style="color: inherit;">pricing page</a>.</p>
+        <p>Hire starts at £395 for parties, £495 for weddings and £750 for corporate events, with packages at roughly 200, 400 and 600 prints. Every package includes tracked DPD delivery, a QR-code return, a fitted ink cartridge and your designs loaded before it ships. Full details are on our <a href="/pricing" style="color: inherit;">pricing page</a>.</p>
       </details>
       <details>
         <summary>Which drinks work with a drink printer?</summary>
@@ -1262,7 +1277,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       </details>
       <details>
         <summary>How does delivery and return work?</summary>
-        <p>We courier the machine tracked with DPD, usually arriving the working day before your event, anywhere in the UK. Afterwards you box it up with the packaging it came in and drop it at any of 3,500 DPD Pickup shops using the pre-paid label, within two working days.</p>
+        <p>We courier the machine tracked with DPD, usually arriving the working day before your event, anywhere in the UK. Afterwards you box it up with the packaging it came in and drop it at any of 3,500 DPD Pickup shops within two working days, showing the return QR code we send you, no label or printing needed.</p>
       </details>
       <details>
         <summary>Can guests print their own photos and selfies?</summary>
@@ -1276,19 +1291,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
 <footer>
   <div class="container">
     <a href="/" class="logo"><img class="logo-mark" src="/images/favicon-180.png" alt="" />The <em>Pint</em> Printers</a>
-    <p>© 2026 The Pint Printers. United Kingdom. <a href="/how-it-works">How it works</a> · <a href="/weddings">Weddings</a> · <a href="/pricing">Pricing</a> · <a href="/parties">Parties</a> · <a href="/corporate">Corporate</a> · <a href="/drink-printer-hire">Drink printer hire</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="https://instagram.com/thepintprinters" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:hello@thepintprinters.co.uk">hello@thepintprinters.co.uk</a></p>
-    <div class="badge-row">
-      <a class="ukws-badge" href="https://ukweddingservices.com/kent/manchester/wedding-general-entertainment/the-pint-printers/the-pint-printers-personalised-drink-printing-55280" target="_blank" rel="noopener" aria-label="Find us on UK Wedding Services">
-        <img src="https://ukweddingservices.com/badges/find-me-on-ukws-light.png" alt="Find us on UK Wedding Services" />
-      </a>
-      <a class="ukws-badge" href="https://bridebook.com/uk/wedding-entertainment/the-pint-printers-wilmslow-cheshire-east-csQgvjBmMg" target="_blank" rel="noopener" aria-label="See The Pint Printers on Bridebook">
-        <img src="https://image.bridebook.com/assets/cms/badges/Featured_on_Badge_light_uk.png" alt="Featured on Bridebook" />
-      </a>
-      <a class="ukws-badge" href="https://www.addtoevent.co.uk/suppliers/the-pint-printers" target="_blank" rel="noopener" aria-label="See The Pint Printers on Add To Event">
-        <img class="badge-portrait" src="https://www.addtoevent.co.uk/sites/default/files/badges/featured_portrait_purple_small.png" alt="Add To Event Featured Supplier" />
-      </a>
-    </div>
-  </div>
+    <p>© 2026 The Pint Printers. United Kingdom. <a href="/how-it-works">How it works</a> · <a href="/weddings">Weddings</a> · <a href="/pricing">Pricing</a> · <a href="/parties">Parties</a> · <a href="/corporate">Corporate</a> · <a href="/drink-printer-hire">Drink printer hire</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="https://instagram.com/thepintprinters" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:hello@thepintprinters.co.uk">hello@thepintprinters.co.uk</a></p>  </div>
 </footer>
 
 <script>

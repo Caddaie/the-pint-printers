@@ -87,7 +87,7 @@
           "name": "How much does a pint printer cost for a wedding?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Wedding hire starts at £495 with 200 prints included, £595 with 400 prints, or £695 with 600 prints. Every package includes the machine, ink, up to six of your designs loaded before shipping, tracked delivery to your venue and a pre-paid return label."
+            "text": "Wedding hire starts at £495 with 200 prints included, £595 with 400 prints, or £695 with 600 prints. Every package includes the machine, ink, up to six of your designs loaded before shipping, tracked delivery to your venue and a QR-code return."
           }
         },
         {
@@ -135,7 +135,7 @@
           "name": "How do wedding payments work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A £150 booking fee secures your date. The balance plus a refundable £300 damage deposit is due 60 days before the wedding. The deposit comes back within seven working days of the machine arriving back to us in good condition. Weddings booked within 60 days are paid in full upfront."
+            "text": "A booking fee of 25% of your package secures your date. The balance plus a refundable £300 damage deposit is due 60 days before the wedding. The deposit comes back within seven working days of the machine arriving back to us in good condition. Weddings booked within 60 days are paid in full upfront."
           }
         }
       ]
@@ -948,6 +948,21 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
   @media (max-width: 380px) {
     .canvas-grid { grid-template-columns: 1fr; }
   }
+
+  /* Uniform badge sizing */
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .badge-row .ukws-badge { padding: 8px 12px; margin: 0; }
+  .badge-row .ukws-badge img,
+  .badge-row .ukws-badge img.badge-portrait {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
 </style>
 <style>
   /* ============ PAGE HERO (interior pages) ============ */
@@ -1236,7 +1251,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       <div class="step">
         <div class="step-num">04</div>
         <h3>Print all night, send it back</h3>
-        <p>Guests tap a design or scan the QR code for selfies. Afterwards, the pre-paid return label goes on the box and it's dropped at a local parcel shop. Done.</p>
+        <p>Guests tap a design or scan the QR code for selfies. Afterwards, the box goes to any local DPD Pickup shop, just show the return QR code we send you. Done.</p>
       </div>
     </div>
     <div class="how-cta">
@@ -1340,7 +1355,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
       </details>
       <details>
         <summary>How do wedding payments work?</summary>
-        <p>A £150 booking fee secures your date. The balance plus a refundable £300 damage deposit is due 60 days before the wedding. The deposit comes back within seven working days of the machine arriving back to us in good condition. Weddings booked within 60 days of the date are paid in full upfront.</p>
+        <p>A booking fee of 25% of your package secures your date. The balance plus a refundable £300 damage deposit is due 60 days before the wedding. The deposit comes back within seven working days of the machine arriving back to us in good condition. Weddings booked within 60 days of the date are paid in full upfront.</p>
       </details>
       <details>
         <summary>What if something goes wrong on the day?</summary>
@@ -1375,9 +1390,17 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
           </div>
           <div>
             <strong>Accredited supplier</strong>
-            <a class="ukws-badge" href="https://ukweddingservices.com/kent/manchester/wedding-general-entertainment/the-pint-printers/the-pint-printers-personalised-drink-printing-55280" target="_blank" rel="noopener" aria-label="Find us on UK Wedding Services">
-              <img src="https://ukweddingservices.com/badges/find-me-on-ukws-light.png" alt="Find us on UK Wedding Services" />
-            </a>
+            <div class="badge-row">
+              <a class="ukws-badge" href="https://ukweddingservices.com/kent/manchester/wedding-general-entertainment/the-pint-printers/the-pint-printers-personalised-drink-printing-55280" target="_blank" rel="noopener" aria-label="Find us on UK Wedding Services">
+                <img src="https://ukweddingservices.com/badges/find-me-on-ukws-light.png" alt="Find us on UK Wedding Services" />
+              </a>
+              <a class="ukws-badge" href="https://bridebook.com/uk/wedding-entertainment/the-pint-printers-wilmslow-cheshire-east-csQgvjBmMg" target="_blank" rel="noopener" aria-label="See The Pint Printers on Bridebook">
+                <img src="https://image.bridebook.com/assets/cms/badges/Featured_on_Badge_light_uk.png" alt="Featured on Bridebook" />
+              </a>
+              <a class="ukws-badge" href="https://www.addtoevent.co.uk/suppliers/the-pint-printers" target="_blank" rel="noopener" aria-label="See The Pint Printers on Add To Event">
+                <img class="badge-portrait" src="https://www.addtoevent.co.uk/sites/default/files/badges/featured_portrait_purple_small.png" alt="Add To Event Featured Supplier" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1433,11 +1456,7 @@ src="https://www.facebook.com/tr?id=2204868849810259&ev=PageView&noscript=1"
 <footer>
   <div class="container">
     <a href="/" class="logo"><img class="logo-mark" src="/images/favicon-180.png" alt="" />The <em>Pint</em> Printers</a>
-    <p>© 2026 The Pint Printers. United Kingdom. <a href="/how-it-works">How it works</a> · <a href="/weddings">Weddings</a> · <a href="/pricing">Pricing</a> · <a href="/parties">Parties</a> · <a href="/corporate">Corporate</a> · <a href="/drink-printer-hire">Drink printer hire</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="https://instagram.com/thepintprinters" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:hello@thepintprinters.co.uk">hello@thepintprinters.co.uk</a></p>
-    <a class="ukws-badge" href="https://ukweddingservices.com/kent/manchester/wedding-general-entertainment/the-pint-printers/the-pint-printers-personalised-drink-printing-55280" target="_blank" rel="noopener" aria-label="Find us on UK Wedding Services">
-      <img src="https://ukweddingservices.com/badges/find-me-on-ukws-light.png" alt="Find us on UK Wedding Services" />
-    </a>
-  </div>
+    <p>© 2026 The Pint Printers. United Kingdom. <a href="/how-it-works">How it works</a> · <a href="/weddings">Weddings</a> · <a href="/pricing">Pricing</a> · <a href="/parties">Parties</a> · <a href="/corporate">Corporate</a> · <a href="/drink-printer-hire">Drink printer hire</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="https://instagram.com/thepintprinters" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:hello@thepintprinters.co.uk">hello@thepintprinters.co.uk</a></p>  </div>
 </footer>
 
 <script>
