@@ -1029,5 +1029,29 @@ src="https://www.facebook.com/tr?id=4490516777889378&ev=PageView&noscript=1"
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
 
+<script>
+  /* Lead source: remembers how the visitor arrived (e.g. a Meta ad) for 30 days and adds it to enquiry forms */
+  (function(){
+    var KEY='tpp_lead_source', src=null;
+    try{
+      var p=new URLSearchParams(location.search);
+      if(p.get('utm_source')){
+        src=p.get('utm_source')+(p.get('utm_medium')?' / '+p.get('utm_medium'):'')+(p.get('utm_campaign')?' / '+p.get('utm_campaign'):'');
+      } else if(p.get('fbclid')){ src='facebook / instagram click'; }
+      else if(p.get('gclid')){ src='google ads'; }
+      if(src){ localStorage.setItem(KEY, JSON.stringify({s:src,t:Date.now()})); }
+      else {
+        var st=JSON.parse(localStorage.getItem(KEY)||'null');
+        if(st && Date.now()-st.t < 30*864e5){ src=st.s; }
+      }
+    }catch(e){}
+    if(!src){ src=document.referrer ? 'referral: '+new URL(document.referrer).hostname : 'direct / organic'; }
+    document.querySelectorAll('form').forEach(function(f){
+      var i=f.querySelector('input[name="lead_source"]');
+      if(!i){ i=document.createElement('input'); i.type='hidden'; i.name='lead_source'; f.appendChild(i); }
+      i.value=src;
+    });
+  })();
+</script>
 </body>
 </html>
