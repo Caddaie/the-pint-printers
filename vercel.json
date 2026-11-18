@@ -18,7 +18,7 @@
     { "source": "/:dir+/index.html", "destination": "/:dir+", "permanent": true },
     { "source": "/:dir+/index", "destination": "/:dir+", "permanent": true },
     {
-      "source": "/:name((?!google61623efbcbe62d9b\\.html$).*)\\.html",
+      "source": "/:name((?!google61623efbcbe62d9b\\.html$|google62dca09989a77314\\.html$).*)\\.html",
       "destination": "/:name",
       "permanent": true
     }
