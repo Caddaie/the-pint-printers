@@ -1,5 +1,5 @@
 {
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "headers": [
     {
@@ -11,5 +11,20 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/index", "destination": "/", "permanent": true },
+    { "source": "/:dir+/index.html", "destination": "/:dir+", "permanent": true },
+    { "source": "/:dir+/index", "destination": "/:dir+", "permanent": true },
+    {
+      "source": "/:name((?!google61623efbcbe62d9b\\.html$).*)\\.html",
+      "destination": "/:name",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    { "source": "/:path((?:[^/]+/)*[^/.]+)", "destination": "/:path.html" },
+    { "source": "/:path((?:[^/]+/)*[^/.]+)", "destination": "/:path/index.html" }
   ]
 }
